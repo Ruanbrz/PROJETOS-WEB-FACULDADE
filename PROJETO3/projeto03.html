@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+    <title>TRABALHOTHREE\\CSS</title>
+    <style>
+        /* esse seletor define o estilo que o texto vai apresentar */
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            /* ao criar o h1 dentro do bloco style eu referencio as informações daqui para o texto dentro do bloco head 
+        nesse caso eu defini a fonte e a cor das letras*/
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            /* a font size define o tamanho da fonte é a unidade de medida */
+            color: royalblue;
+        }
+
+        img {
+            width: 20%;
+            height: 20%;
+            /* largura
+            altura */
+        }
+
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 10px;
+
+            /* essa tag é o seletor universal e ele altera o documento como um todo 
+            ao definir o padding como 10px se cria uma distacia entre as imagens e texto*/
+
+            /*Margem - Espaçamento fora do conteúdo. Padding / Preenchimento - Espaçamento dentro dos limites do conteúdo.
+            Tendo em conta que o limite do espaçamento do conteúdo de um elemento é a sua borda (border box)  */
+        }
+
+        .rodape {
+            background-color: #4169E1;
+            color: #fff;
+            text-align: center;
+            /* o backgrounbd color define a cor de fundo do rodape como um todo
+            color é a cor das letras
+            text align é o alinhamento do texto aonde ele ira se posicionar dentro do rodaope
+             */
+        }
+
+        #figura {
+            background-color: #4169E1;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <figure id="figura">
+        <img src="image/projeto03 (1).png" alt="image de topo" title="CSS">
+    </figure>
+    <!-- A TAG figure serve para marcar diagramas, ilustrações, fotos, e fragmentos de código (entre outros conteúdos). -->
+    <!-- diferente da img que anexa uma imagem ao documento -->
+    <!-- o id serve como uma classe para poder referenciar la no style -->
+    <header>
+        <p> Para mais informações acesse: <a href="https://www.w3schools.com/css/" target="_blank">W3C</a>
+        </p>
+        <!-- o bloco header é o cabeçalho e para criar uma palavra com link clicavel adc o "a" e depois a palavra que sera clicavel -->
+    </header>
+
+    <H1>O QUE É O CSS?</H1>
+
+    <P><B>CSS</B> ou Folha de Estilo em Cascata é usado para estilizar os elementos da página <I>HTML</I>. O <B>CSS</B>
+        faz a decoração da
+        página, tornando-a mais amigável para o usuário final. Com o <B>CSS</B> é possível alterar a cor do texto, a cor
+        de fundo
+        da página, o espaçamento entre os parágrafos, etc. Além disso o CSS permite decorar elementos como tabelas,
+        grids,
+        entre outros. </P>
+    <p> O <B>CSS</B> é uma tecnologia desenvolvida pela W3C (World Wide Web Consortium) em 1996. <B>CSS</B> é uma
+        linguagem de estilo e
+        não uma linguagem de programação como JavaScript ou PHP e é de fácil aprendizado. Há uma forte relação entre a
+        linguagem <I>HTML</I> e o CSS. O <I>HTML</I> é uma linguagem de marcação, e é a base dos sites da WEB, o
+        <B>CSS</B> é focado na estética
+        de um site.
+    </p>
+    <footer class="rodape">
+        <h2> Trabalhando com CSS</h2>
+        <p class="rodape"> Folhas de estilo</p>
+        <p class="rodape">Imagens...</p>
+        <!-- ao se criar uma classe pode se altera-la dentro do style dando estilo a ela -->
+    </footer>
+</body>
+
+</html>
